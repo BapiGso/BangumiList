@@ -5,9 +5,9 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  * Bangumi 追番列表
  *
  * @package BangumiList
- * @author SSpirits
+ * @author smoe
  * @version 1.0.0
- * @link http://blog.sspirits.top
+ * @link https://smoe.cc
  */
 class BangumiList_Plugin implements Typecho_Plugin_Interface
 {
