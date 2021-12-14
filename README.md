@@ -19,5 +19,5 @@ Bangumi 追番列表插件 Typecho 版
   
 #### 项目说明
  - 此项目copy自[@ShadowySpirits](https://github.com/ShadowySpirits/BangumiList)因原作者转到了Hugo且Bangumi的Api有了一些更新所以开了个仓库，在此感谢[原作者](https://github.com/ShadowySpirits)和Bangumi提供的[Api](https://github.com/bangumi/api)
- - 将原项目使用的Jquery.ajax更换为原生ajax，现在没有使用Jquery的网站能更方便的引入了！
+ - 将原项目使用的jquery.ajax更换为原生ajax，现在没有使用jquery的网站能更方便的引入了！
  - 因Bangumi Api的限制最多只能查询25条信息，代码中已将看过和在看合并为了看过
