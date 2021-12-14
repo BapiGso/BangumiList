@@ -78,14 +78,16 @@ class BangumiAPI
             $name = $value1["subject"]["name_cn"] ?: $value1["subject"]["name"];
             $url = $value1["subject"]["url"];
             $imgUrl = $value1["subject"]["images"]["medium"];
-            echo "<ul><a href=" . $url . " target='_blank' class='bangumi'><img src='$imgUrl'/></a><p>$name</p><br></ul>";
+            $imgUrl = str_replace("http","https",$imgUrl);
+            echo "<ul><a href=" . $url . " target='_blank' rel='noopener' class='bangumi'><img alt='$name'src='$imgUrl'/></a><p>$name</p><br></ul>";
             }
             echo "<br><b>想看</b><br>";
             foreach ($wantsee as $value1) {
             $name = $value1["subject"]["name_cn"] ?: $value1["subject"]["name"];
             $url = $value1["subject"]["url"];
             $imgUrl = $value1["subject"]["images"]["medium"];
-            echo "<ul><a href=" . $url . " target='_blank' class='bangumi'><img src='$imgUrl'/></a><p>$name</p><br></ul>";
+            $imgUrl = str_replace("http","https",$imgUrl);
+            echo "<ul><a href=" . $url . " target='_blank' rel='noopener' class='bangumi'><img alt='$name'src='$imgUrl'/></a><p>$name</p><br></ul>";
             }
         }
     }
